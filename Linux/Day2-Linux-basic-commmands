@@ -1,0 +1,163 @@
+                                    Linux Basic Commands
+
+username@hostname:~#
+
+username = the name of the logged in user 
+hostname = the system's name
+:~  = represents the current working directory
+# or $ = indicate a type of user
+
+# = root user
+$ = normal user
+
+commands in linux follow basic structure:
+
+<command> <options> <arguments>
+
+commmand: perform specific  tasks
+options: use filters
+arguments: input
+
+1. sudo su - / sudo -i = (Super User DO) (Switch User)
+--> switch to root account
+syntax: sudo su -
+
+2. man man : (manual)
+--> this command is used to open manual
+syntax: man man
+"use Q to quit"
+
+3. ls : (list)
+--> display current directory/folder contents
+i] syntax: ls
+
+ii] syntax: ls <folder_name>
+--> to display specific directory contents
+eg: ls /etc
+
+4. mkdir : (Make Directory)
+--> to create directory/folder
+syntax: mkdir <folder_name>
+eg: mkdir demo
+
+syntax: mkdir <folder1> <folder2> <folder3>..
+--> to create multiple folders
+eg: mkdir folder1 folder2 folder3
+
+syntax: mkdir -p <parent-folder>/<child-folder>
+--> to create neasted directory
+eg: mkdir -p dev/test/prod
+
+5. rmdir : (Remove Directory)
+--> to delete empty directory
+syntax: rmdir <folder-name>
+eg: rmdir demo
+
+6. rm -rf 
+here,
+rm stands for remove
+-r stands for recursive
+-f stands for forecefully
+
+-r tells rm to recursively delete the directory and all its sub contents.
+recursive means that the command will operate on a directory and all its contents
+syntax: rm -rf <folder_name>
+eg: rm -rf dev
+
+7. touch :
+--> used to create empty file.
+syntax: touch <file_name>
+eg: touch demo.txt
+
+8. rm : (remove)
+--> to delete file
+syntax: rm <file_name>
+eg: rm demo.txt
+
+9. cat:
+--> to display file contents
+syntax: cat <file_name>
+eg: cat demo.txt
+
+10. cat >
+--> cat command can be used to create file and add contents to it.
+syntax: cat > <file_name>
+eg: cat > file.txt
+
+"Type file contents and then use ctrl + d to save and exit"
+
+11. cat >>
+--> to append contents to the file
+syntax: cat >> <file_name>
+eg: cat >> file.txt
+
+12. cp : (copy)
+--> used to copy files
+syntax: cp <source_file> <destination>
+eg: cp  file.txt  test.txt
+
+13. cp -r:
+--> used to copy directory
+syntax: cp -r <dir_name> <destination_folder>
+eg: cp -r test demo
+
+14. head:
+--> used to display first few (10 lines) lines of file.
+syntax: head <file_name>
+eg: head file.txt
+
+15. tail:
+--> used to display last few lines (10 lines) of file.
+syntax: tail <file_name>
+eg: tail file.txt
+
+16. mv : (move)
+1. move file
+syntax: mv <soure_file> <destination>
+eg: mv demo.txt folder
+
+2. rename file
+syntax:  mv <old_file_name> <new_file_name>
+eg: mv  demo.txt  test.txt
+
+17. wc: (word count)
+--> it is used to find out no of lines, word count, character count 
+syntax: wc <file_name>
+eg: wc demo.txt
+
+18. sort : 
+--> this command is used to sort file
+syntax: sort <file_name>
+eg: sort demo.txt
+
+19. uniq:
+--> this command used to delete all adjecent duplicate  lines.
+syntax: uniq <file_name>
+eg: uniq demo.txt
+
+20. grep:
+--> the grep command is used to search for a specific word or pattern inside a file.
+syntax: grep "pattern" <file_name>
+eg: grep "rose" new.txt
+
+options:
+-i : to ignore case
+-n : to display line numbers where the match is found
+
+21. cd : Change Directory
+--> this command is used to move between directories.
+syntax: cd <file_name>
+eg: cd folder
+
+22. clear , ctrl+l : to clear screen
+
+| : pipe
+--> it is used to send the output of one command as the input to another command.
+syntax: command1 | command2
+eg: sort new.txt | uniq
+
+
+
+
+
+

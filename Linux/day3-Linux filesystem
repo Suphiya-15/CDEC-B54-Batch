@@ -1,0 +1,27 @@
+                                Linux File system
+
+windows                                                    Linux
+C:\                                                         /
+
+all configuration files stored under                       /etc
+c:\windows
+
+temporary files
+c:\temp                                                    /tmp 
+
+all software related files
+c:\program files                                          /usr : unix system resources
+                                                              or
+                                                              /opt 
+
+user related information
+c:\users                                                    /home 
+
+-------------------------------------------------------------------------
+
+/root : home directory for root user
+/boot : It contains boot loader files
+POST method: Power On Self test
+
+
+                                                                 
