@@ -1,0 +1,55 @@
+                                 Vim Text Editor
+                
+--> Text editor is a software tool used to create, view and modify text files.
+
+vi text editor?
+--> vi stands for Visual Interface. 
+--> it is classssic text editor commanly found on unix system but 
+having limited features.
+
+**vim
+--> vim stands for Vi IMproved
+--> it is advanced version of vi with more advanced features.
+
+** VIM modes:
+1. Normal mode:
+--> when you open vim, it noremally starts in normal mode
+--> you can not type text directly in this mode.
+--> it can be accessed from other modes by using 'esc'
+
+2. Insert mode:
+--> insert mode allows you to type text or edit text.
+--> to enter insert mode use 'i'
+
+3. Command line / command execute mode:
+--> this mode allows you to execute commands.
+--> type ':' and then enter command
+
+4. Visual mode
+--> to enter visual mode use 'v'
+--> A mode that provides additional options for selecting text.
+
+**syntax to create or open file:
+vim <file_name>
+vim demo.txt
+
+**Save and quit commands:
+:w and <enter> = to save file
+:q and <enter> = to quit file
+:q! and <enter> =  to force quit 
+:wq and <enter> = to save and exit
+:set nu = display line numbers
+:set nonu = hide line numbers
+
+*Cursor movement
+h = move left
+j = move down
+k = move up
+l = move right
+    OR
+ arrow keys
+
+ gg = go to first line of the afile
+ shift+g = go to last line of the file
+
+

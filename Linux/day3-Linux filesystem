@@ -22,6 +22,13 @@ c:\users                                                    /home
 /root : home directory for root user
 /boot : It contains boot loader files
 POST method: Power On Self test
+/dev : device files
+/media : mount point for removable media
+/mnt : temp mount point for filesystem
+/var : frequently chaninging data: stores logs
+/srv : Service data : web, FTP server
+/lib : essential lib files
+/bin and /sbin: essential commands
 
 
                                                                  
