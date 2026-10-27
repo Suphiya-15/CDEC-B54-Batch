@@ -52,4 +52,70 @@ l = move right
  gg = go to first line of the afile
  shift+g = go to last line of the file
 
+*Search and replace
+--> Top to bottom
+syntax= /word
+eg= /AWS
+
+use 'n' for the next occurance of serach word.
+
+--> Bottom to Top
+syntax= ?word
+eg= ?AWS
+
+--> Replace word
+syntax= :%s/word1/word2/g
+eg= :%s/AWS/Microsoft Azure/g
+--> this command is used to replace the word1 with word2 globally.
+
+HW:
+1. command to replace single occurance
+2. commmand to replace single word define on number line
+
+
+**Undo and redo
+u = to undo last changes
+ctrl+r = to redo the changes
+
+**Deletion, cut, copy and paste
+dd = delete current line
+<n>dd = delete n lines from the current line
+10dd = delete 10 lines from current line
+dw = delete a word
+<n>dw = delete n words
+
+cc = cut current line
+<n>cc = cut n lines
+cw = cut word
+<n>cw = cut n words
+
+yy = copy current line
+<n>yy = copy n lines
+yw = copy a word
+<n>yw = copy n words
+
+p = to paste cut/copied lines
+<n>p = to paste n times
+
+Visual mode:
+
+d = delete
+c = cut
+y = copy
+p = paste
+u = convert capital letter to small letter
+shift + u = convert small letters to capital lettters
+~ = convert small to capital and vice versa
+
+commands:
+shift + h = move cursor to the top of the screen
+shift + m = move cursor to the middle of the screen
+shift + l = move cursor to the bottom of the screen
+shift + i = insert text at the start of line
+a = append text after the currrent char
+shift + a = append text at the end of the line
+o = open a new line below
+shift + o = open a new line above
+
+
 
