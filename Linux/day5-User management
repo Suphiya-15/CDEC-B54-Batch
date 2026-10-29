@@ -12,3 +12,67 @@ limited permission compared to root user.
 3. System user:
 --> system user is a user account created by the system who
 used to run background processes and services.
+
+adduser <user_name> / useradd <user_name>
+--> to create user
+adduser seema
+
+deluser <user_name>
+--> to delete user
+deluser seema
+
+**Important files:
+/etc/passwd = all user information stored
+/etc/shells = store all system supported shell information
+/etc/shadow = store all user password related information
+/etc/group = store all group related information
+
+/etc/passwd contains:
+seema  :  x  :  1000  :  1000  :  ,,,  :  /home/seema  :  /bin/bash
+  1       2       3       4        5          6               7
+
+  1 : user name
+  2 : user account password
+  3 : user ID --> UID
+  4 : group ID
+  5 : user other details
+  6 : user home directory
+  7 : shell type
+
+  usermod -u <new_uid> <user_name>
+  --> to change user ID
+  usermod -u 7001 seema
+
+  usermod -g <new_gid> <user_name>
+  --> to change group ID
+  usermod -g 1001 seema
+
+  usermod -c "<commment>" <user_name>
+  --> to modify user information
+  usermod -c "seema patil, 0123456789, Mumbai" seema
+
+  usermod -d <new_homedir> <user_name>
+  --> to change user working directory
+  usermod -d /mnt seema
+
+  usermod -s <new_shell> <user_name>
+  --> to change shell type
+  usermod -s /bin/sh seema
+
+  usermod -l <old_name> <new_name> 
+  --> to rename user name
+  usermod -l seema pooja
+
+  passwd <user_name>
+  --> to change user account passsword 
+  passwd seema 
+
+  usermod -L <user_name>
+  --> to lock user account
+  usermod -L seema
+
+  usermod -U <user_name>
+  --> to  unlock user account
+  usermod -U seema
+
+

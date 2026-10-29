@@ -1,0 +1,41 @@
+                          Group Management
+
+groupadd <group_name>
+--> to create group
+groupadd devops
+
+/etc/group file contains:
+
+devops  :  x  :  5003  :
+  1        2      3       4
+
+  1: group name
+  2: password
+  3: groupID
+  4: list of group members
+
+  **Types of group:
+  1. primary group
+  2. secondary group
+
+  groupdel <group_name>
+  --> to delete group
+  groupdel devops
+
+  groupmod -n <new_groupname> <old_groupname>
+  --> to update group name
+  groupmod -n dev devops
+
+  usermod -aG <group_name> <user_name> 
+  --> to append single user to group
+  usermod -aG devops seema
+
+  gpasswd -M <user1>,<user2>,<user3>...  <group_name>
+  --> to add multiple users in a group
+  gpasswd -M seema,meena,priyanka  devops
+
+  gpasswd -d <user_name> <group_name>
+  --> to delete single user from group
+  gpasswd -d seema devops
+  
+

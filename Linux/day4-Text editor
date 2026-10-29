@@ -69,9 +69,15 @@ eg= :%s/AWS/Microsoft Azure/g
 --> this command is used to replace the word1 with word2 globally.
 
 HW:
-1. command to replace single occurance
-2. commmand to replace single word define on number line
 
+1. command to replace single occurance
+--> :s/word1/word2
+
+2. commmand to replace single word define on number line
+--> :%5s/word1/word2/g
+
+--> :line_no s/word1/word2
+--> :5s/AWS/Microsoft Azure
 
 **Undo and redo
 u = to undo last changes
