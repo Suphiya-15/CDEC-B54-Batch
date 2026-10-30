@@ -1,0 +1,110 @@
+                         Permission
+
+--> permission means deciding who can access files or directories and what
+they are allowed to do whith it.
+
+ll <file_name>
+ls -l <file_name>
+ls -ltr <file_name>
+--> used to check out file permission
+ll demo.txt
+ls -l demo.txt
+ls -ltr demo.txt
+
+-  rw-  r--  r--   1   root   root   0   Oct 30 22:38   demo
+1   2    3    4    5    6      7     8        9          10
+
+1 : Type of file (- : normal file)
+2 : owner permission
+3 : group permission
+4 : other permission
+5 : link count
+6 : file owner name
+7 : file group name
+8 : file size
+9 : file creation date and time
+10 : file name
+
+**Types of permission:
+--> linux has three basic permission 
+r : read
+w : write
+x : execute
+
+rwx
+
+**Who gets the permission?
+-->
+1. user/owner
+2. group
+3. others
+
+
+**there are two common ways to give permission:
+1. symbolic method
+2. octal/numrical method
+
+1. symbolic method:
+chmod : change mode
+
+owner/user : u
+group : g
+others : o
+all : a
+
++ : Add the permission
+- : remove the permission
+= : set the permission
+
+chmod u+r , u+w, u+x
+      u+rw, u+rx, u+wx, u+rwx
+      u-r, u-w...
+      u-rwx
+      u=r, u=w ........   <file_name>
+
+      g
+      o
+      a
+      ug
+      go
+      uo
+
+------------------------------------------------------------------------------
+
+2. Numrical method:
+
+r : 4
+w : 2
+x : 1
+total : 7
+
+rw-r--r-x
+
+user : rw-
+     : 4+2+0
+     : 6
+
+group : r--
+      : 4+0+0 
+      : 4
+
+others : r-x
+       : 4+0+1
+       : 5
+
+chmod 645 demo
+
+chmod 777 demo
+--> rwxrwxrwx
+
+chmod 400 demo
+--> r--------
+
+chmod 465 demo
+--> r--rw-r-x
+
+chmod 000 demo
+--> ---------
+
+
+
